@@ -8,7 +8,7 @@ const members = [
 	{
 		photo: "./ressources/members/amin.jpg", 
 		name: "Amin Zarour", 
-		desc: ""
+		desc: "Réalisateur et acteur. Baccalauréat en neurosciences."
 	}, 
 	{
 		photo: "./ressources/members/dimitra.jpg", 
