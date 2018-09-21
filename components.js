@@ -120,7 +120,7 @@ const Home = { view() {
 			}, 
 			m("h3", 
 				{}, 
-				"Nôtre dernière vidéo"), 
+				"Notre dernière vidéo"), 
 			m(IframeLatestVideo), 
 			m("br"), 
 			m("a", 
