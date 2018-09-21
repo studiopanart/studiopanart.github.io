@@ -22,9 +22,9 @@ window.addEventListener("load", function() {
 
 	window.addEventListener("hashchange", () => setView(location.hash));
 
-	/*if ('serviceWorker' in navigator) {
+	if ('serviceWorker' in navigator) {
 		navigator.serviceWorker
 				 .register('./service-worker.js')
 				 .then(function() { console.log('[Service Worker] Service Worker Registered'); });
-	}*/
+	}
 });
