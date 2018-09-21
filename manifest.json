@@ -3,9 +3,14 @@
 	"short_name": "Panart",
 	"icons": [
 		{
-			"src": "./ressources/icon.ico",
-				"sizes": "256x256",
-				"type": "image/ico"
+			"src": "./ressources/icon_256px.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}, 
+		{
+			"src": "./ressources/icon_144px.png", 
+			"sizes": "144x144", 
+			"type": "image/png"
 		}
 	],
 	"start_url": "/index.html",
