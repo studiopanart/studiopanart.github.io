@@ -43,14 +43,14 @@ const Navbar = { view() {
 					"data-href": "/equipe"
 				}, 
 				"Équipe"), 
-			m("li", 
+			/*m("li", 
 				{
 					onclick() {
 						setView("#!/actualites");
 					}, 
 					"data-href": "/actualites"
 				}, 
-				"Actualités"), 
+				"Actualités"), */
 			m("li", 
 				{
 					onclick() {
@@ -303,7 +303,46 @@ const Members = { view() {
 		{
 			id: "members"
 		}, 
-		...members.map(member => m(Member, member)))
+		...members.map(member => m(Member, member)), 
+		m("fieldset", 
+			{}, 
+			m("legend", 
+				{}, 
+				"Pour nous joindre"), 
+			m("ul", 
+				{}, 
+				m("li", 
+					{}, 
+					m("a", 
+						{
+							target: "_blank", 
+							href: "https://www.instagram.com/studiopanart/"
+						}, 
+						"Instagram")), 
+				m("li", 
+					{}, 
+					m("a", 
+						{
+							target: "_blank", 
+							href: "https://www.facebook.com/panartstudio/"
+						}, 
+						"Facebook")), 
+				m("li", 
+					{}, 
+					m("a", 
+						{
+							target: "_blank", 
+							href: "https://twitter.com/Studio_PanArt"
+						}, 
+						"Twitter")), 
+				m("li", 
+					{}, 
+					m("a", 
+						{
+							target: "_blank", 
+							href: "https://www.youtube.com/channel/UC0cULmZZWpWpshTsyUHYiXQ"
+						}, 
+						"Youtube")))))
 } }
 
 const Member = { view(vnode) {
