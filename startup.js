@@ -22,7 +22,7 @@ window.addEventListener("load", function() {
 
 	window.addEventListener("hashchange", () => setView(location.hash));
 
-	if ('serviceWorker' in navigator) {
+	if (false && 'serviceWorker' in navigator && location.pathname === "/") {
 		navigator.serviceWorker
 				 .register('./service-worker.js')
 				 .then(function() { console.log('[Service Worker] Service Worker Registered'); });
